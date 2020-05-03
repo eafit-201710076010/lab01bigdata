@@ -140,18 +140,18 @@ Realizar un programa en Map/Reduce, con hadoop en Python o Java, que permita cal
 
 Hive es utilizado para gestionar enormes datasets almacenados bajo el HDFS de Hadoop y realizar consultas (queries) sobre los mismos. 
 
-### Creación y conexión a base de datos MYSQL en EC2 
+#### Creación y conexión a base de datos MYSQL en EC2 
 **![](http://imgfz.com/i/d1Hf0QO.png)**
 
-### Importar base de datos  HIVE 
-### Comando: 
+#### Importar base de datos  HIVE 
+#### Comando: 
 
 ```
 $ sqoop import-all-tables --connect jdbc:mysql://database-2.cnwmmyylynxl.us-east-1.rds.amazonaws.com:3306/retail_db --username=admin --password=<password>--hive-database retail_db --hive-overwrite --hive-import --warehouse-dir=/tmp/retail_dbtmp --mysql-delimiters 
 ```
 **![](http://imgfz.com/i/HjEsZnP.png)**
 
-### Verificamos que funcionó con HUE 
+#### Verificamos que funcionó con HUE 
 **HUE (Hadoop User Experience)** es una interfaz de usuario web para la gestión de Hadoop. 
 Facilita el manejo y visualización de los datos
 
@@ -159,7 +159,7 @@ Facilita el manejo y visualización de los datos
 
 **![](http://imgfz.com/i/uIh8m6J.png)**
 
-### Realización de Querys  
+#### Realización de Querys  
 - Productos más populares 
 
 **![](http://imgfz.com/i/2G0YX9C.png)**
@@ -168,14 +168,85 @@ Facilita el manejo y visualización de los datos
 
 **![](http://imgfz.com/i/7ljmwIQ.png)**
 
-### Creación de tabla externa con datos en HDFS desde el Clúster EMR 
+#### Creación de tabla externa con datos en HDFS desde el Clúster EMR 
 
 **![](http://imgfz.com/i/2rm6DfE.png)**
 
-### Crear directorio para tabla externa con ETL  
+#### Crear directorio para tabla externa con ETL  
+
+**![](http://imgfz.com/i/lt8wm6p.png)**
+
+**![](http://imgfz.com/i/FlVoeLP.png)**
+
+**![](http://imgfz.com/i/tjFwXMB.png)**
+
+#### Query de los productos más visitados 
+
+**![](http://imgfz.com/i/4Yuy6nx.png)**
+
+**Pregunta:** 
+
+¿Son los productos más vistos también los más vendidos? 
+
+**Respuesta según los Query** 
+
+Partiendo de la suposición de que las URL tienen el nombre de los productos, tenemos que: 
+El producto más visitado es uno de los que más genera ganacias 
+
+**![](http://imgfz.com/i/Leim4IA.png)**
+
+**![](http://imgfz.com/i/IW8HqjL.png)**
+
+# Spark
+
+Spark es un framework de programación para procesamiento de datos distribuidos diseñado para ser rápido y de propósito general. 
+
+#### Subir los datos a un Bucket S3 
+
+**![](http://imgfz.com/i/6G12EDU.png)**
+
+#### Crear un Notebook y leer los datos 
+
+**![](http://imgfz.com/i/spfZ6I5.png)**
+
+#### - Agregar columnas 
+
+Se creó una función que analizara el estado de los pacientes y agregara una columna para mostrar la atención requerida 
+
+**![](http://imgfz.com/i/XwbRzMy.png)**
+
+**Nueva Columna**
 
 **![]()**
+
 **![]()**
+
+#### Agrupaciones  
+
+Agrupar por edades y en orden ascendente según cantidad de casos 
+
 **![]()**
+
+Agrupación por estado, según número de casos 
+
 **![]()**
+
+#### Filtraciones 
+
+Filtrado de datos para ver la edad y el sexo de los casos graves en Antioquia 
+
+**![]()**
+
+Filtro de los casos graves en la población más vulnerable (mayores de 70 años) 
+
+**![]()**
+
+#### Eliminar Columnas 
+
+**![]()**
+
+#### Guardar en S3
+
+**![]()**
+
 **![]()**
