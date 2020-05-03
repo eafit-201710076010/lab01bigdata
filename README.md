@@ -1,4 +1,4 @@
-# lab01bigdata
+# Laboratorio BigData
 
 ## Laura Sánchez Córdoba
 
@@ -136,3 +136,46 @@ Realizar un programa en Map/Reduce, con hadoop en Python o Java, que permita cal
   
  ```python employees3.py dataempleados.csv```
  
+# HIVE
+
+Hive es utilizado para gestionar enormes datasets almacenados bajo el HDFS de Hadoop y realizar consultas (queries) sobre los mismos. 
+
+### Creación y conexión a base de datos MYSQL en EC2 
+**![](http://imgfz.com/i/d1Hf0QO.png)**
+
+### Importar base de datos  HIVE 
+### Comando: 
+
+```
+$ sqoop import-all-tables --connect jdbc:mysql://database-2.cnwmmyylynxl.us-east-1.rds.amazonaws.com:3306/retail_db --username=admin --password=<password>--hive-database retail_db --hive-overwrite --hive-import --warehouse-dir=/tmp/retail_dbtmp --mysql-delimiters 
+```
+**![](http://imgfz.com/i/HjEsZnP.png)**
+
+### Verificamos que funcionó con HUE 
+**HUE (Hadoop User Experience)** es una interfaz de usuario web para la gestión de Hadoop. 
+Facilita el manejo y visualización de los datos
+
+**![](http://imgfz.com/i/rhBkamo.png)**
+
+**![](http://imgfz.com/i/uIh8m6J.png)**
+
+### Realización de Querys  
+- Productos más populares 
+
+**![](http://imgfz.com/i/2G0YX9C.png)**
+
+- Productos que generan más ganacias 
+
+**![](http://imgfz.com/i/7ljmwIQ.png)**
+
+### Creación de tabla externa con datos en HDFS desde el Clúster EMR 
+
+**![](http://imgfz.com/i/2rm6DfE.png)**
+
+### Crear directorio para tabla externa con ETL  
+
+**![]()**
+**![]()**
+**![]()**
+**![]()**
+**![]()**
