@@ -57,7 +57,41 @@ Instalación del AWS CLI
  ``` 
  **![](http://imgfz.com/i/GL12x8i.png)**
   
- ### Ejercicio 1 de MapReduce/MRJob
+
+ ### Creación de Clúster por CLI 
+  
+  **![](http://imgfz.com/i/au9j0PC.png)**
+  
+  **Script de creación y terminación de clusters**
+  
+  **![](http://imgfz.com/i/GwFpRJY.png)**
+  
+  **Conexión al Clúster desde SSH** 
+  
+  **![](http://imgfz.com/i/MV3UnI5.png)**
+  
+  **Acceso al Hue desde el Clúster**
+  
+  **![](http://imgfz.com/i/DKkPh2t.png)**
+  
+  **Acceso a Zeppelin y creación de un Notebook** 
+  
+  **![](http://imgfz.com/i/rHj582P.png)**
+
+### Wordcount con datos en hdfs
+```
+python wordcount-mr.py hdfs:///user/lsanchezc/datasets/gutenberg-small/*.txt -r hadoop
+```
+
+**Correr Wordcount-mr.py con hdfs en EMR** 
+
+**![](http://imgfz.com/i/tSR4BW3.png)**
+  
+**Correr Wordcount-mr.py con hdfs en el  DCA** 
+
+**![](http://imgfz.com/i/YthCGFo.png)**
+
+ # Ejercicio 1 de MapReduce/MRJob
   
   **Enunciado**
   
@@ -102,35 +136,3 @@ Realizar un programa en Map/Reduce, con hadoop en Python o Java, que permita cal
   
  ```python employees3.py dataempleados.csv```
  
- ### Creación de Clúster por CLI 
-  
-  **![](http://imgfz.com/i/au9j0PC.png)**
-  
-  **Script de creación y terminación de clusters**
-  
-  **![](http://imgfz.com/i/GwFpRJY.png)**
-  
-  **Conexión al Clúster desde SSH** 
-  
-  **![](http://imgfz.com/i/MV3UnI5.png)**
-  
-  **Acceso al Hue desde el Clúster**
-  
-  **![](http://imgfz.com/i/DKkPh2t.png)**
-  
-  **Acceso a Zeppelin y creación de un Notebook** 
-  
-  **![](http://imgfz.com/i/rHj582P.png)**
-
-### Wordcount con datos en hdfs
-```
-python wordcount-mr.py hdfs:///user/lsanchezc/datasets/gutenberg-small/*.txt -r hadoop
-```
-
-**Correr Wordcount-mr.py con hdfs en EMR** 
-
-**![](http://imgfz.com/i/tSR4BW3.png)**
-  
-**Correr Wordcount-mr.py con hdfs en el  DCA** 
-
-**![](http://imgfz.com/i/YthCGFo.png)**
