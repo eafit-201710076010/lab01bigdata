@@ -217,36 +217,36 @@ Se creó una función que analizara el estado de los pacientes y agregara una co
 
 **Nueva Columna**
 
-**![]()**
+**![](http://imgfz.com/i/qZ4cfsD.png)**
 
-**![]()**
+**![](http://imgfz.com/i/EJQSODl.png)**
 
-#### Agrupaciones  
+#### - Agrupaciones  
 
 Agrupar por edades y en orden ascendente según cantidad de casos 
 
-**![]()**
+**![](http://imgfz.com/i/lxKyj2q.png)**
 
 Agrupación por estado, según número de casos 
 
-**![]()**
+**![](http://imgfz.com/i/TpYdEtC.png)**
 
-#### Filtraciones 
+#### - Filtraciones 
 
 Filtrado de datos para ver la edad y el sexo de los casos graves en Antioquia 
 
-**![]()**
+**![](http://imgfz.com/i/MmgPADb.png)**
 
 Filtro de los casos graves en la población más vulnerable (mayores de 70 años) 
 
-**![]()**
+**![](http://imgfz.com/i/0NKGMqn.png)**
 
-#### Eliminar Columnas 
+#### - Eliminar Columnas 
 
-**![]()**
+**![](http://imgfz.com/i/dpntO29.png)**
 
 #### Guardar en S3
 
-**![]()**
+**![](http://imgfz.com/i/V1L0MUi.png)**
 
-**![]()**
+**![](http://imgfz.com/i/6R8S0op.png)**
